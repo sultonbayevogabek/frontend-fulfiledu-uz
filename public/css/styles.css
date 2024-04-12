@@ -160,12 +160,6 @@ body {
     color: #CE9211;
 }
 
-.webinar-main-title--telegram {
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
 .webinar-main-ul {
     margin: 0 0 4rem;
     padding: 2.5rem 0 0;
@@ -510,10 +504,6 @@ body {
 
     .webinar-main-info--telegram {
         width: 100%;
-    }
-
-    .webinar-main-title--telegram {
-        text-align: center;
     }
 
     .webinar-main-mentor {
