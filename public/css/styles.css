@@ -209,6 +209,7 @@ body {
 .webinar-main-button {
     position: relative;
     height: 6rem;
+    padding: 0 1rem;
     border-radius: 1.5rem;
     background-color: #F5CB72;
     color: #443412;
@@ -216,6 +217,34 @@ body {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 35px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.webinar-main-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #F5CB72;
+}
+
+.webinar-main-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(45deg);
+    }
 }
 
 .webinar-price {
@@ -485,6 +514,7 @@ body {
     }
 
     .webinar-main-title {
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -504,6 +534,7 @@ body {
 
     .webinar-main-info {
         width: 100%;
+        padding-top: 1rem;
     }
 
     .webinar-main-info--telegram {
